@@ -1,1 +1,2 @@
 pyserial>=2.7
+micropython-cpython-uasyncio>=0.2

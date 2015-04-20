@@ -4,12 +4,12 @@ import subprocess
 git_version = 'UNKNOWN'
 try:
     git_version = str(subprocess.check_output(['git', 'rev-parse', '--verify', '--short', 'HEAD'])).strip()
-except subprocess.CalledProcessError,e:
+except subprocess.CalledProcessError as e:
     #print "Got error when trying to read git version: %s" % e
     pass
 
 setup(
-    name='scpi',
+    name='uartparser',
     version='0.1.0dev-%s' % git_version,
     #version='0.1.0',
     author='Eero "rambo" af Heurlin',
